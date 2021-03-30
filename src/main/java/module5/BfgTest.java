@@ -50,16 +50,13 @@ class BFG {
     }
 
     BFG() {
-        this(1000,50,"BFG");
+        this(1000, 50, "BFG");
     }
 
     @Override
     public String toString() {
-        return name + ", ammo: " + ammo +", damage: " + damage;
+        return name + ", ammo: " + ammo + ", damage: " + damage;
     }
-
-
-
 
 
 }

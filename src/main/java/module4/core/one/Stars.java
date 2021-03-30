@@ -14,13 +14,13 @@ class Stars {
 
     @Override
     public String toString() {
-       int oneStar = count % 10;
-       int tenSign  = count / 10 % 10;
-       int hundredSigh = count / 100 % 10;
-       int thousandSigh = count /1000;
+        int oneStar = count % 10;
+        int tenSign = count / 10 % 10;
+        int hundredSigh = count / 100 % 10;
+        int thousandSigh = count / 1000;
 
         return "X".repeat(thousandSigh) + "Y".repeat(hundredSigh) +
-                 "Z".repeat(tenSign) + "*".repeat(oneStar);
+                "Z".repeat(tenSign) + "*".repeat(oneStar);
 
     }
 

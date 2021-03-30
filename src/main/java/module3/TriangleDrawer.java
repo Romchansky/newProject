@@ -7,14 +7,12 @@ public class TriangleDrawer {
         String asterisk = "*";
         int i = side;
         while (i > 0) {
-           result += asterisk.repeat(i);
+            result += asterisk.repeat(i);
             i--;
             result += "\n";
-            }
-        return result;
         }
-
-
+        return result;
+    }
 
 
     public static void main(String[] args) {

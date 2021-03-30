@@ -7,15 +7,16 @@ import java.util.Arrays;
 public class OutputStreamExample {
 
     public static void main(String[] args) throws IOException {
-        byte[] out = new byte[]{-128,-127,120,1,2,4};
+        byte[] out = new byte[]{-128, -127, 120, 1, 2, 4};
 
-        byte[]data = new byte[out.length];
+        byte[] data = new byte[out.length];
 
         OutputStream outputStream = new OutputStream() {
-            private  int index = 0;
+            private int index = 0;
+
             @Override
             public void write(int b) throws IOException {
-                data[index++]=(byte) b;
+                data[index++] = (byte) b;
             }
         };
 

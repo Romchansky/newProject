@@ -17,7 +17,7 @@ class SensitiveDataSearcher {
     public boolean isSensitiveDataPresent(String phrase) {
         boolean sensitive = false;
         String[] sensitiveWords = {"pass", "key", "login", "email"};
-        String[] myPhrase = phrase.replace(":"," ").split(" ");
+        String[] myPhrase = phrase.replace(":", " ").split(" ");
         for (String words : myPhrase) {
             for (String myWord : sensitiveWords) {
                 if (myWord.equalsIgnoreCase(words)) {

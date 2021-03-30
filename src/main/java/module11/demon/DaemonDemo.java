@@ -2,7 +2,7 @@ package module11.demon;
 
 public class DaemonDemo {
     public static void main(String[] args) {
-        Thread thread = new Thread( () -> {
+        Thread thread = new Thread(() -> {
             for (int i = 0; i < 10; i++) {
                 System.out.println("Thread: " + Thread.currentThread().getName() + " running " + i);
                 try {

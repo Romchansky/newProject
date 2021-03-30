@@ -36,16 +36,16 @@ class GooWordStat {
 
     public String searchFreq() {
         String freqSearch;
-        if(freq <1000) {
+        if (freq < 1000) {
             freqSearch = "LOW";
-            return freqSearch ;
-        }else if(freq>=1000 && freq < 100000) {
+            return freqSearch;
+        } else if (freq >= 1000 && freq < 100000) {
             freqSearch = "MEDIUM";
             return freqSearch;
-        }else if(freq>=100000 && freq < 10000000) {
+        } else if (freq >= 100000 && freq < 10000000) {
             freqSearch = "HIGH";
             return freqSearch;
-        }else {
+        } else {
             freqSearch = "EXTRA HIGH";
             return freqSearch;
         }

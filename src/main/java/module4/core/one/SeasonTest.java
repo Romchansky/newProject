@@ -24,8 +24,10 @@ class SeasonTest {
 
 abstract class Season {
     public abstract String getName();
+
     public abstract boolean isCold();
 }
+
 class Winter extends Season {
     @Override
     public String getName() {

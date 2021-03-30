@@ -12,14 +12,14 @@ public class Person {
         this.name = name;
     }
 
-    public Person(String name){
+    public Person(String name) {
         this.name = name;
-       System.out.println("Name is " + name);
-   }
+        System.out.println("Name is " + name);
+    }
 
-   public Person(String firstName, String lastName){
-       System.out.println("First name is " + firstName + ", last name is " + lastName);
-   }
+    public Person(String firstName, String lastName) {
+        System.out.println("First name is " + firstName + ", last name is " + lastName);
+    }
 
     public static void main(String[] args) {
         new Person("John");

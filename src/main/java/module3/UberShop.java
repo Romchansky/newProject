@@ -1,6 +1,6 @@
 package module3;
 
-import java.util.*;
+import java.util.Arrays;
 
 public class UberShop {
     public void printPrices(float[] prices) {
@@ -107,18 +107,6 @@ public class UberShop {
         return concatenteArrays;
     }
 
-    public int getPricesSum(int[] prices, int minPrice, int maxPrice){
-        int result = 0;
-        for (int i = 0; i <prices.length ; i++) {
-            if(minPrice <= prices[i] & prices[i] <=maxPrice){
-                result += prices[i];
-
-            }
-        }return result;
-    }
-
-
-
     //Test output
     public static void main(String[] args) {
         UberShop shop = new UberShop();
@@ -152,8 +140,19 @@ public class UberShop {
 //        System.out.println(Arrays.toString(shop.mergeStocks(showcaseStocks, warehouseStocks)));
 
         //Should be 144 - 20 + 50 + 40 + 34
-        int[] prices = new int[] {10, 700, 50, 500};
+        int[] prices = new int[]{10, 700, 50, 500};
         System.out.println(shop.getPricesSum(prices, 10, 50));
+    }
+
+    public int getPricesSum(int[] prices, int minPrice, int maxPrice) {
+        int result = 0;
+        for (int i = 0; i < prices.length; i++) {
+            if (minPrice <= prices[i] & prices[i] <= maxPrice) {
+                result += prices[i];
+
+            }
+        }
+        return result;
     }
 
 }

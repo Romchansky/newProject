@@ -1,4 +1,4 @@
-public class ExonNames{
+public class ExonNames {
     public boolean areNamesEqual(String name1, String name2) {
         return name1.equals(name2);
     }
@@ -43,9 +43,9 @@ public class ExonNames{
         return "CLEAN" + name.strip() + "CLEAN";
     }
 
-    public String makeHalfOfName (String name) {
+    public String makeHalfOfName(String name) {
 
-        return name.substring(0, name.length()/2);
+        return name.substring(0, name.length() / 2);
 
     }
 

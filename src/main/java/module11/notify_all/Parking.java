@@ -19,9 +19,10 @@ public class Parking {
             monitor.notifyAll();
         }
     }
+
     public void leaveParking() throws InterruptedException {
         synchronized (monitor) {
-            while(blockedPlaces == 0) {
+            while (blockedPlaces == 0) {
                 monitor.wait();
             }
             blockedPlaces--;

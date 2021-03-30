@@ -24,7 +24,7 @@ class CarTest {
         Car car = new Car();
         Car.Door[] doors = new Car.Door[4];
         car.setDoors(doors);
-        Car.Door.integer =a;
+        Car.Door.integer = a;
     }
 
 }

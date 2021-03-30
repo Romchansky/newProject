@@ -1,8 +1,6 @@
 package module6;
 
 
-import java.util.Arrays;
-
 class WordCombineTest {
     public static void main(String[] args) {
         //true

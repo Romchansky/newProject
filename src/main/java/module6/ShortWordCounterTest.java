@@ -25,6 +25,7 @@ class ShortWordCounter {
             if (words.length() <= minLength) {
                 counter++;
             }
-        }return counter;
+        }
+        return counter;
     }
 }

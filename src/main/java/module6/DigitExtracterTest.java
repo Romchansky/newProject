@@ -17,21 +17,18 @@ class DigitExtracterTest {
 class DigitExtracter {
 
     public int[] extract(String text) {
-            String replaceInteger = text.replaceAll("\\D", "");
-            char[] integersToChar = replaceInteger.toCharArray();
-            int[] numbers = new int[integersToChar.length];
+        String replaceInteger = text.replaceAll("\\D", "");
+        char[] integersToChar = replaceInteger.toCharArray();
+        int[] numbers = new int[integersToChar.length];
 
-            for (int i = 0; i < integersToChar.length; i++) {
-                numbers[i] = Character.getNumericValue(integersToChar[i]);
-            }
-            return numbers;
+        for (int i = 0; i < integersToChar.length; i++) {
+            numbers[i] = Character.getNumericValue(integersToChar[i]);
         }
+        return numbers;
     }
+}
 
 
-
-
-
-   // Напиши класс DigitExtracter. В этом классе создай метод public int[] extract(String text).
-   // Метод принимает строку, и возвращает массив всех цифр, которые есть в этой строке, в том же порядке,
-  // в котором они встречаются.
+// Напиши класс DigitExtracter. В этом классе создай метод public int[] extract(String text).
+// Метод принимает строку, и возвращает массив всех цифр, которые есть в этой строке, в том же порядке,
+// в котором они встречаются.

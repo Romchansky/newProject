@@ -1,7 +1,6 @@
 package module6;
 
 import java.util.Arrays;
-import java.util.Locale;
 
 class WordSplitterTest {
     public static void main(String[] args) {
@@ -9,7 +8,6 @@ class WordSplitterTest {
 
         String[] words = wordSplitter.split("Hello      world");
         String[] words1 = wordSplitter.split("This is Sparta");
-
 
 
         //[hello, world]
@@ -28,7 +26,7 @@ class WordSplitter {
 //        splitString = phrase.toLowerCase().split(" ");
 //        return splitString;
 
-        return phrase.replaceAll(" +"," ").toLowerCase().split(" ");
+        return phrase.replaceAll(" +", " ").toLowerCase().split(" ");
 
     }
 }

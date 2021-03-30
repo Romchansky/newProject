@@ -6,7 +6,7 @@ abstract class Passenger {
     public abstract int getTicketPrice();
 }
 
-class RegularPassenger extends Passenger{
+class RegularPassenger extends Passenger {
 
     @Override
     public String getType() {
@@ -19,7 +19,7 @@ class RegularPassenger extends Passenger{
     }
 }
 
-class VIPPassenger extends Passenger{
+class VIPPassenger extends Passenger {
 
     @Override
     public String getType() {

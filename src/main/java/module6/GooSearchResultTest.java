@@ -1,4 +1,5 @@
 package module6;
+
 class GooSearchResultTest {
     public static void main(String[] args) {
         //test.com

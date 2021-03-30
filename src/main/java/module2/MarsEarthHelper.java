@@ -11,9 +11,9 @@ public class MarsEarthHelper {
         System.out.println("convertAppleCount(10f) = " + helper.convertAppleCount(10f));
     }
 
-    public int convertAppleCount(float count){
+    public int convertAppleCount(float count) {
         System.out.println(count);
-        return (int)count;
+        return (int) count;
     }
 
 

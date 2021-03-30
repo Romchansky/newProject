@@ -12,15 +12,14 @@ public class User {
         System.out.println("Hello Hello Hello");
     }
 
-     static {
+    static {
         System.out.println("First...");
-         {
+        {
             int a = 10;
             int b = 15;
             System.out.println("Second...." + (a + b));
         }
     }
-
 
 
     public User(String name, boolean admin) {

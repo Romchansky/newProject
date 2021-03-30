@@ -27,7 +27,7 @@ class XFuelEngine extends Engine {
 
     protected String serialNumber;
 
-    public void setSerialNumber(String serialNumber){
+    public void setSerialNumber(String serialNumber) {
         this.serialNumber = serialNumber;
     }
 
@@ -36,7 +36,7 @@ class XFuelEngine extends Engine {
     }
 }
 
-class AdvancedXFuelEngine extends XFuelEngine{
+class AdvancedXFuelEngine extends XFuelEngine {
 
     void printInfo() {
         System.out.print("Serial number is " + serialNumber + ", power is " + getPower());

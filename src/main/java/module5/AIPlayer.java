@@ -5,12 +5,12 @@ class AIPlayer {
 
     public void setHp(int hp) {
         this.hp = hp;
-            if (this.hp < 0){
-                throw new IllegalArgumentException("Ok value");
-            }
-            if(this.hp >100){
-                throw new IllegalArgumentException("Invalid value");
-            }
+        if (this.hp < 0) {
+            throw new IllegalArgumentException("Ok value");
+        }
+        if (this.hp > 100) {
+            throw new IllegalArgumentException("Invalid value");
+        }
     }
 }
 

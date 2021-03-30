@@ -20,9 +20,9 @@ class PlanetTester {
 
     String test(SpaceObject object) {
 
-        if(object instanceof Mars) {
+        if (object instanceof Mars) {
             return "planet";
-        }else {
+        } else {
             return "not planet";
         }
 

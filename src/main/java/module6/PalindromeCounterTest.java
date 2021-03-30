@@ -19,19 +19,18 @@ class PalindromeCounterTest {
 class PalindromeCounter {
 
     public int count(String phrase) {
-     int count = 0;
-     String[] myPhrase = phrase.toLowerCase(Locale.ROOT).split(" ");
-        for (String words:myPhrase) {
+        int count = 0;
+        String[] myPhrase = phrase.toLowerCase(Locale.ROOT).split(" ");
+        for (String words : myPhrase) {
             StringBuilder stringBuilder = new StringBuilder(words);
             stringBuilder.reverse();
-            if(words.equals(stringBuilder.toString())){
+            if (words.equals(stringBuilder.toString())) {
                 count++;
             }
         }
         return count;
     }
 }
-
 
 
 //    private String reverse(String word) {

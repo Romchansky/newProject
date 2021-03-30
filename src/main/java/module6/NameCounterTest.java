@@ -1,8 +1,5 @@
 package module6;
 
-import java.util.ArrayList;
-import java.util.List;
-
 class NameCounterTest {
     public static void main(String[] args) {
         //1

@@ -16,7 +16,7 @@ public class ArlanHelper {
         System.out.println(helper.drawLine(16));
         //Should be:
         //JavaJavaJavaJava
-        System.out.println(helper.drawPattern(new char[] {'J', 'a', 'v', 'a'}, 5));
+        System.out.println(helper.drawPattern(new char[]{'J', 'a', 'v', 'a'}, 5));
 
     }
 
@@ -93,12 +93,12 @@ public class ArlanHelper {
 //        return result;
 //    }
 
-    public String drawPattern(char[] pattern, int repeatCount){
-        String result = Arrays.toString(pattern).replaceAll(", |\\[|\\]" , "");
-        String result1= "";
+    public String drawPattern(char[] pattern, int repeatCount) {
+        String result = Arrays.toString(pattern).replaceAll(", |\\[|\\]", "");
+        String result1 = "";
         int repeat = repeatCount;
-        while(repeat>0){
-            result1+=result;
+        while (repeat > 0) {
+            result1 += result;
             repeat--;
         }
         return result1;

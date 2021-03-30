@@ -14,10 +14,10 @@ class WaterCounter {
 
     public double count(String text) {
 
-        double spaceCount = text.length() - text.replaceAll(" +","").length();
-        double lettersCount = text.length() - text.replaceAll("\\D+","").length();
+        double spaceCount = text.length() - text.replaceAll(" +", "").length();
+        double lettersCount = text.length() - text.replaceAll("\\D+", "").length();
 
-        double resultWater = spaceCount/lettersCount;
+        double resultWater = spaceCount / lettersCount;
 
         return resultWater;
     }

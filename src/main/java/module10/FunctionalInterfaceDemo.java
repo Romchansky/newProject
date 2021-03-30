@@ -32,10 +32,10 @@ public class FunctionalInterfaceDemo {
 
         //binary
         BinaryOperator<Integer> multiply = (x, y) -> x * y;
-        System.out.println(multiply.apply(15,5));
+        System.out.println(multiply.apply(15, 5));
 
         //unary
-        UnaryOperator<Integer> multiplyUnary = (x) -> x*x;
+        UnaryOperator<Integer> multiplyUnary = (x) -> x * x;
         System.out.println(multiplyUnary.apply(5));
 
     }

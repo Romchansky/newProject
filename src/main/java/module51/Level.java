@@ -27,8 +27,9 @@ class LevelLoader {
 
         if (level.getWidth() * level.getHeight() <= 100000) {
             System.out.println("Level loaded");
-        } else { throw new LevelTooBigException();
-      }
+        } else {
+            throw new LevelTooBigException();
+        }
     }
 }
 

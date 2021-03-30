@@ -5,9 +5,9 @@ import java.util.Objects;
 
 public final class Student {
 
-     private final String firstName;
-     private final String lastName;
-     private final String[] lessons;
+    private final String firstName;
+    private final String lastName;
+    private final String[] lessons;
 
     public Student(String firstName, String lastName, String[] lessons) {
         this.firstName = firstName;
@@ -20,7 +20,7 @@ public final class Student {
     }
 
     public Student setFirstName(String firstName) {
-        return new Student(firstName, lastName,lessons);
+        return new Student(firstName, lastName, lessons);
     }
 
     public String getLastName() {
@@ -28,15 +28,15 @@ public final class Student {
     }
 
     public Student setLastName(String lastName) {
-        return new Student(firstName,lastName,lessons);
+        return new Student(firstName, lastName, lessons);
     }
 
     public String[] getLessons() {
-        return Arrays.copyOf(lessons,lessons.length);
+        return Arrays.copyOf(lessons, lessons.length);
     }
 
     public Student setLessons(String[] lessons) {
-        return new Student(firstName,lastName,lessons);
+        return new Student(firstName, lastName, lessons);
     }
 
     @Override

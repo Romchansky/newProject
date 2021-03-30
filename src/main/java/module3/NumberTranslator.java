@@ -44,6 +44,6 @@ public class NumberTranslator {
         translate("iX ");
         translate("XX");
         System.out.println(translate("X"));
-        }
     }
+}
 

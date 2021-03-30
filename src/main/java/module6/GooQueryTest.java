@@ -14,6 +14,7 @@ class GooQueryTest {
         System.out.println(query);
     }
 }
+
 class GooQuery {
 
     private String language;

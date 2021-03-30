@@ -23,8 +23,8 @@ public class StreamDemo {
 
         //filter by active status
         List<Employee> activeEmployees = new ArrayList<>();
-        for (Employee employee:eployees) {
-            if(employee.getStatus().name().equals(UserStatus.ACTIVE.name())){
+        for (Employee employee : eployees) {
+            if (employee.getStatus().name().equals(UserStatus.ACTIVE.name())) {
                 activeEmployees.add(employee);
             }
         }
@@ -44,7 +44,7 @@ public class StreamDemo {
         }
 
         //with stream
-        List<String> employeeWithStream =  eployees.stream()
+        List<String> employeeWithStream = eployees.stream()
                 .filter(employee -> employee.getStatus().name().equals(UserStatus.ACTIVE.name()))
                 .sorted(Comparator.comparingInt(Employee::getId))
                 .map(Employee::getName)

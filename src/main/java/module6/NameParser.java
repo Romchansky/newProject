@@ -5,7 +5,7 @@ class NameParser {
         StringBuilder builder = new StringBuilder();
 
         for (int i = 0; i < names.length; i++) {
-             builder.append(names[i].split(" ")[0]);
+            builder.append(names[i].split(" ")[0]);
 
             if (i != names.length - 1) {
                 builder.append(", ");

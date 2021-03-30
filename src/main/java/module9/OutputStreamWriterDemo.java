@@ -10,8 +10,7 @@ public class OutputStreamWriterDemo {
 
 
         try (ByteArrayOutputStream byteArray = new ByteArrayOutputStream();
-             OutputStreamWriter outputStreamWriter = new OutputStreamWriter(byteArray))
-        {
+             OutputStreamWriter outputStreamWriter = new OutputStreamWriter(byteArray)) {
             outputStreamWriter.write("My name is Roman!");
             outputStreamWriter.flush();
 

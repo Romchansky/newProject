@@ -68,8 +68,7 @@ class Point {
     }
 
 
-
-        @Override
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -101,7 +100,7 @@ class Point {
     }
 }
 
-class StarTrack{
+class StarTrack {
 
     private Point start;
     private Point finish;

@@ -12,11 +12,11 @@ class DigitTextTest {
 
 class DigitText {
     public boolean detect(String text) {
-        try{
-            text = text.replace(" ","");
+        try {
+            text = text.replace(" ", "");
             Integer.parseInt(text);
             return true;
-        }catch (NumberFormatException nfe){
+        } catch (NumberFormatException nfe) {
             return false;
         }
     }

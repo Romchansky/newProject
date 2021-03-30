@@ -1,6 +1,6 @@
 package module3;
 
-import java.util.*;
+import java.util.Arrays;
 
 public class HarekCity {
     public String[] createEmptyNameArray() {
@@ -42,20 +42,6 @@ public class HarekCity {
         return keyboard;
     }
 
-    public void printKeyboard() {
-        char[][] evenNumbers = createKeyboard();
-        System.out.println(Arrays.toString(evenNumbers[0]));
-        System.out.println(Arrays.toString(evenNumbers[1]));
-        System.out.println(Arrays.toString(evenNumbers[2]));
-        System.out.println(Arrays.toString(evenNumbers[3]));
-        }
-        public String[] makeCopy (String[]names) {
-            String[]copyArray = Arrays.copyOf(names, names.length);
-            System.out.println("Copied!");
-            return copyArray;
-        }
-
-
     public static void main(String[] args) {
         String[] results = new String[]{"mix", "max", "pex", "fux", "rox"};
         String[] changedResults = new HarekCity().changeElectResultAgain(results);
@@ -68,11 +54,25 @@ public class HarekCity {
 
         new HarekCity().printKeyboard();
 
-        String[] source = new String[] {"Hero", "Mihu"};
+        String[] source = new String[]{"Hero", "Mihu"};
         String[] copy = new HarekCity().makeCopy(source);
 
         source[0] = "CHANGED!"; //Мы меняем исходный массив, но на копии это не отображается
 
         System.out.println(Arrays.toString(copy));
+    }
+
+    public void printKeyboard() {
+        char[][] evenNumbers = createKeyboard();
+        System.out.println(Arrays.toString(evenNumbers[0]));
+        System.out.println(Arrays.toString(evenNumbers[1]));
+        System.out.println(Arrays.toString(evenNumbers[2]));
+        System.out.println(Arrays.toString(evenNumbers[3]));
+    }
+
+    public String[] makeCopy(String[] names) {
+        String[] copyArray = Arrays.copyOf(names, names.length);
+        System.out.println("Copied!");
+        return copyArray;
     }
 }

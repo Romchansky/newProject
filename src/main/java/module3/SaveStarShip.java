@@ -1,6 +1,7 @@
 package module3;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class SaveStarShip {
     public int calculateDistance(int distance) {

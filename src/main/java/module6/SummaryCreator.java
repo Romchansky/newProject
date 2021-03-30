@@ -7,9 +7,9 @@ public class SummaryCreator {
         final int wordLength = 15;
         StringBuilder stringBuilder = new StringBuilder();
 
-        if(text.length() <=15 ) {
+        if (text.length() <= 15) {
             return textNew;
-        }else{
+        } else {
             char ch = textNew.charAt(15);
             if (stringBuilder.capacity() >= wordLength && Character.isLetter(ch)) {
                 return textNew.substring(0, 15) + "...";

@@ -5,8 +5,8 @@ class TotalScore {
         int result = 0;
         int index = 0;
 
-        while(index<scores.length) {
-                result += scores[index];
+        while (index < scores.length) {
+            result += scores[index];
             index++;
         }
         return result;

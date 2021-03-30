@@ -14,7 +14,6 @@ class PunctuationMarkCounterTest {
         System.out.println(counter.count("End."));
 
 
-
     }
 }
 

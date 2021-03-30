@@ -10,9 +10,9 @@ class Level {
     }
 
     public int calculateLevelHash() {
-        int sum=0;
-        for (int i = 0; i < points.length ; i++) {
-            sum += points[i].getX()* points[i].getY();
+        int sum = 0;
+        for (int i = 0; i < points.length; i++) {
+            sum += points[i].getX() * points[i].getY();
         }
         return sum;
     }

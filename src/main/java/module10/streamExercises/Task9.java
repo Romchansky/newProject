@@ -17,7 +17,7 @@ public class Task9 {
 
         final String resultNames = collection.stream()
                 .map(employee -> employee.getName())
-                .collect(Collectors.joining(" ,","Names: ", "."));
+                .collect(Collectors.joining(" ,", "Names: ", "."));
 
         System.out.println(resultNames);
 

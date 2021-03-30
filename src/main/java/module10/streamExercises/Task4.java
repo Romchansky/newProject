@@ -2,7 +2,6 @@ package module10.streamExercises;
 
 import java.util.Comparator;
 import java.util.List;
-import java.util.Optional;
 
 import static java.util.Arrays.asList;
 
@@ -19,7 +18,7 @@ public class Task4 {
                 .max(Comparator.comparing(Employee::getAge)).get();
 
 
-        System.out.println(maxEmployee.getName() + " is the oldest person" );
+        System.out.println(maxEmployee.getName() + " is the oldest person");
 
 
     }

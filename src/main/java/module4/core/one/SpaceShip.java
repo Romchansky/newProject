@@ -3,6 +3,7 @@ package module4.core.one;
 public class SpaceShip {
     private String name;
     private String serialNumber;
+
     public String getName() {
         return name;
     }
@@ -15,19 +16,19 @@ public class SpaceShip {
         this.name = name;
     }
 
-    public String getSerialNumber(){
+    public String getSerialNumber() {
         return serialNumber;
     }
 
-    public void setSerialNumber(String serialNumber){
-        if(serialNumber.startsWith("SN")){
+    public void setSerialNumber(String serialNumber) {
+        if (serialNumber.startsWith("SN")) {
             this.serialNumber = serialNumber;
         }
         return;
     }
 
-    void printInfo(){
-        System.out.println("Name is " + getName()+ ", serial number is " + getSerialNumber());
+    void printInfo() {
+        System.out.println("Name is " + getName() + ", serial number is " + getSerialNumber());
     }
 
     //Test output

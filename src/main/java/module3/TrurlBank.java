@@ -14,13 +14,12 @@ public class TrurlBank {
         System.out.println(bank.countSumOfDigits(1995));
     }
 
-    public int sumQuads(int n){
+    public int sumQuads(int n) {
         int k = 1;
         int l = 0;
         int sum = 0;
 
-        while (k < (n + n))
-        {
+        while (k < (n + n)) {
             l = l + k;
             sum = sum + l;
             k = k + 2;
@@ -29,10 +28,10 @@ public class TrurlBank {
         return sum;
     }
 
-    public int sumQuadsTwo(int n){
+    public int sumQuadsTwo(int n) {
         int sum = 0;
         int a = 1;
-        while(a <= n){
+        while (a <= n) {
             int quad = a * a;
             sum = sum + quad;
             a++;
@@ -44,7 +43,7 @@ public class TrurlBank {
     public int sumQuadsThree(int n) {
         int result = 0;
 
-        while(n > 0) {
+        while (n > 0) {
             result += n * n;
             n--;
         }
@@ -52,17 +51,16 @@ public class TrurlBank {
         return result;
     }
 
-    public int countSumOfDigits(int number){
+    public int countSumOfDigits(int number) {
         int sum = 0;
         int digit;
-        while(number != 0){
+        while (number != 0) {
             digit = number % 10;
             sum += digit;
-            number/=10;
+            number /= 10;
         }
-            return sum;
+        return sum;
     }
-
 
 
 }

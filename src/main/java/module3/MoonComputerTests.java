@@ -1,6 +1,6 @@
 package module3;
 
-import java.util.*;
+import java.util.Scanner;
 
 public class MoonComputerTests {
     public void testBasicInputOutput() {
@@ -35,8 +35,6 @@ public class MoonComputerTests {
         System.out.println(resultAnd + " " + resultOr);
         scanner.close();
     }
-
-
 
 
     //Test output on 24, 4 standard input

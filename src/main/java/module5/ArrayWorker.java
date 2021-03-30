@@ -3,12 +3,12 @@ package module5;
 class ArrayWorker {
     public void printElement(int[] array, int index) {
 
-        try{
+        try {
             System.out.println("value is " + array[index]);
         } catch (ArrayIndexOutOfBoundsException e) {
             e.getMessage();
             System.out.println("wrong index");
-        }finally {
+        } finally {
             System.out.println("index is " + index);
         }
     }

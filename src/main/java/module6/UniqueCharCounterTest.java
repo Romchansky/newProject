@@ -18,10 +18,10 @@ class UniqueCharCounterTest {
 class UniqueCharCounter {
 
     public int count(String phrase) {
-    char[] letter = phrase.toCharArray();
-    int count = phrase.length();
-        for (int i = 0; i < letter.length ; i++) {
-            if(i != phrase.indexOf(letter[i])) {
+        char[] letter = phrase.toCharArray();
+        int count = phrase.length();
+        for (int i = 0; i < letter.length; i++) {
+            if (i != phrase.indexOf(letter[i])) {
                 count--;
             }
         }

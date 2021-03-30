@@ -27,13 +27,13 @@ public class MethodReference {
 
         //non static with class instance
         EmployeeUtils employeeUtils = new EmployeeUtils();
-        Consumer<String> printName =  name -> employeeUtils.printName(name);
+        Consumer<String> printName = name -> employeeUtils.printName(name);
         //with method reference
         Consumer<String> printNameWithReference = employeeUtils::printName;
         printNameWithReference.accept("Tarsa");
 
         //non static method without class instance
-        BiConsumer<EmployeeUtils, String> printName1 = (employeeUtil, name) ->employeeUtil.printName(name);
+        BiConsumer<EmployeeUtils, String> printName1 = (employeeUtil, name) -> employeeUtil.printName(name);
         //with method reference
         BiConsumer<EmployeeUtils, String> printName1WithReference1 = EmployeeUtils::printName;
         printName1WithReference1.accept(new EmployeeUtils(), "Tars");

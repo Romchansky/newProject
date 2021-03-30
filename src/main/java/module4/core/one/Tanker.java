@@ -42,6 +42,7 @@ class XFuelTanker extends Tanker {
         return "XFuel";
     }
 }
+
 class MX200Tanker extends Tanker {
     public String getFuelType() {
         return "MX200";

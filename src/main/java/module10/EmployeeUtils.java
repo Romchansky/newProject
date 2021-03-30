@@ -6,7 +6,7 @@ public class EmployeeUtils {
         System.out.println("Employee name: " + employee.getName());
     }
 
-    public void printName (String employee) {
+    public void printName(String employee) {
         System.out.println("Employee name " + employee);
     }
 }

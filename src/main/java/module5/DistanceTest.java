@@ -124,7 +124,7 @@ class QuarkeTrack {
         Arrays.sort(lines);
         this.lines = lines;
         for (int result : lines) {
-                sum +=result;
+            sum += result;
         }
         this.sum = sum;
     }

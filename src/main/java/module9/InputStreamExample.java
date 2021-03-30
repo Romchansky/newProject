@@ -7,7 +7,7 @@ import java.util.Arrays;
 public class InputStreamExample {
 
     public static void main(String[] args) throws IOException {
-        byte[] input = new byte[]{1,2,3,4,5,76,85};
+        byte[] input = new byte[]{1, 2, 3, 4, 5, 76, 85};
 
         InputStream stream = new InputStream() {
             private int index = 0;

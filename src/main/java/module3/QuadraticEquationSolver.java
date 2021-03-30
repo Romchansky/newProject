@@ -28,11 +28,11 @@ public class QuadraticEquationSolver {
     }
 
     public static void main(String[] args) {
-    QuadraticEquationSolver quadraticEquationSolver =new QuadraticEquationSolver();
+        QuadraticEquationSolver quadraticEquationSolver = new QuadraticEquationSolver();
 
-        System.out.println(Arrays.toString(quadraticEquationSolver.solve(1,-2,-3)));
-        System.out.println(Arrays.toString(quadraticEquationSolver.solve(1,12,36)));
-        System.out.println(Arrays.toString(quadraticEquationSolver.solve(5,3,7)));
+        System.out.println(Arrays.toString(quadraticEquationSolver.solve(1, -2, -3)));
+        System.out.println(Arrays.toString(quadraticEquationSolver.solve(1, 12, 36)));
+        System.out.println(Arrays.toString(quadraticEquationSolver.solve(5, 3, 7)));
     }
 }
 

@@ -1,7 +1,6 @@
 package module5;
 
 
-
 class RectangleTest {
     public static void main(String[] args) {
         Rectangle r1 = new Rectangle(10, 5);
@@ -34,7 +33,7 @@ class Rectangle {
     public boolean canPlaceInto(Rectangle anotherRect) {
         int squareFirstRect = this.a * this.b;
         int squareAnotherRect = anotherRect.a * anotherRect.b;
-        if(squareFirstRect <= squareAnotherRect ) {
+        if (squareFirstRect <= squareAnotherRect) {
             return true;
         }
         return false;

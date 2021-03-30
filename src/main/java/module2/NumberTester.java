@@ -2,7 +2,7 @@ package module2;
 
 class NumberTester {
     public boolean isEven(int number) {
-        return number % 2 == 0 ;
+        return number % 2 == 0;
     }
 
     //Test output

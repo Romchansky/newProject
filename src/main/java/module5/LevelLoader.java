@@ -2,6 +2,7 @@ package module5;
 
 class LevelLoader {
     private static LevelLoader instance = new LevelLoader();
+
     public String load(String levelName) {
         return "Loading level " + levelName + " ...";
     }
