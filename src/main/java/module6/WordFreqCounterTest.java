@@ -17,11 +17,11 @@ class WordFreqCounter {
 
     public float countFreq(String phrase, String word) {
         float count = 0f;
-        phrase = phrase.toLowerCase();
-        word = word.toLowerCase();
+//        phrase = phrase.toLowerCase();
+//        word = word.toLowerCase();
         String[] phrase2 = phrase.split(" ");
         for (String s : phrase2) {
-            if (word.equals(s)) {
+            if (word.equalsIgnoreCase(s)) {
                 count++;
             }
         }

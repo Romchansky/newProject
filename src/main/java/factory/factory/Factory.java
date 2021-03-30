@@ -1,8 +1,9 @@
-package factory;
+package factory.factory;
 
-import static clients.Main.OS;
 
-//factory is implementation of singletone patern with lazy initialization
+import static factory.clients.Main.OS;
+
+//factory is implementation of singletone pattern with lazy initialization
 public abstract class Factory {
 
     private static Factory factory;

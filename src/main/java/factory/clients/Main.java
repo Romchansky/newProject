@@ -1,11 +1,12 @@
-package clients;
 
-import factory.Factory;
+package factory.clients;
+
+import factory.factory.Factory;
 
 public class Main {
 
     //Possile params : WINDOWS, LINUX or MAC
-    public final static String OS = "WINDOWS";
+    public final static String OS = "MAC";
 
     public static void main(String[] args) {
 
